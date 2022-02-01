@@ -2,6 +2,15 @@
 
 This is a small exercise to get to know three new technologies for me.
 
+## Running
+
+Right now you can build and run both projects with the Unix command below. This
+won't quite work yet because I haven't finished the swarm or nginx setup yet.
+
+```
+source sh/start_docker.sh
+```
+
 ## Angular
 
 You can find the code for that [here](git@github.com:SonkeWohler/frontend.git).
@@ -19,4 +28,7 @@ I wrapped both the above applications in docker using
 was built in
 [node](https://hub.docker.com/_/node?tab=description&amp%3Bpage=1&amp%3Bname=alpine)
 and using the basic [python image ](https://hub.docker.com/_/python/) for the
-flask side.
+flask side.  On that last one, I haven't looked too much into it, but it
+appears I shouldn't use python and alpine together in docker, [according to
+some](https://pythonspeed.com/articles/alpine-docker-python/).
+
